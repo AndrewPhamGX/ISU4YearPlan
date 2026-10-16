@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISU 4-Year Planner</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ISU 4-Year Planner</h1>
+    <p class="subtitle">Build and save your Iowa State graduation plan in minutes.</p>
+
+    <section id="authSection" class="card">
+      <h2>Account</h2>
+      <div class="row">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter username" />
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter password" />
+      </div>
+      <div class="actions">
+        <button id="createAccountBtn" type="button">Create Account</button>
+        <button id="loginBtn" type="button">Log In</button>
+      </div>
+      <p id="authMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section id="plannerSection" class="card hidden">
+      <div class="space-between">
+        <h2>Your 4-Year Plan</h2>
+        <button id="logoutBtn" type="button">Log Out</button>
+      </div>
+      <p id="welcomeText"></p>
+
+      <div class="row">
+        <label for="majorSelect">Major</label>
+        <select id="majorSelect"></select>
+      </div>
+
+      <div class="row">
+        <label for="courseSelect">Recommended Course</label>
+        <select id="courseSelect"></select>
+      </div>
+
+      <div class="row">
+        <label for="semesterSelect">Semester</label>
+        <select id="semesterSelect"></select>
+      </div>
+
+      <div class="actions">
+        <button id="addCourseBtn" type="button">Add to Semester</button>
+        <button id="savePlanBtn" type="button">Save Plan</button>
+      </div>
+
+      <div id="planGrid" class="grid"></div>
+      <p id="planMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
