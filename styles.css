@@ -1,0 +1,108 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b1b1b;
+  background-color: #f7f7f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  border: 1px solid #333;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.semester {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #fafafa;
+}
+
+.semester h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.semester ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  min-height: 1.2rem;
+  margin-top: 0.75rem;
+}
